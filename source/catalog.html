@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Седона</title>
+    <title>Фото и видео</title>
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -16,10 +16,10 @@
         </button>
         <div class="main-nav__container">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="catalog.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
@@ -34,65 +34,61 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <section class="intro">
-        <h2 class="visually-hidden">Приветствие для туристов</h2>
-        <img class="intro__logo-text" width="282" height="214" src="img/text-index.svg" alt="Надпись Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
-      </section>
-      <section class="advantages">
-        <div class="advantages__title advantages-title">
-          <h2 class="advantages-title__slogan">Седона — небольшой<br>городок в Аризоне,<br>заслуживающий большего!</h2>
-          <p class="advantages-title__text">Рассмотрим 5 причин, по которым<br> Седона круче, чем гранд каньон!</p>
-        </div>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--emphasis">
-            <div>
-              <h3 class="advantages__item-title">НАСТОЯЩИЙ ГОРОДОК</h3>
-              <p class="advantages__item-text">Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
-            </div>
-            <img class="advantages__images" width="520" height="260" src="img/advantages/city.jpg" alt="Фотография Седоны">
-            <ul class="advantages__internal-list internal-list">
-              <li class="internal-list__item">
-                <h3 class="internal-list__title">Жилье</h3>
-                <p class="internal-list__text">Рекомендуем пожить в<br> настоящем мотеле, все как в<br> кино!</p>
-              </li>
-              <li class="internal-list__item">
-                <h3 class="internal-list__title">Еда</h3>
-                <p class="internal-list__text">Всегда заказывайте фирменный<br> бургер, Вы не разочаруетесь!</p>
-              </li>
-              <li class="internal-list__item">
-                <h3 class="internal-list__title">Сувениры</h3>
-                <p class="internal-list__text">Не только китайского, но и<br> местного  производства!</p>
-              </li>
-            </ul>
-          </li>
-          <li class="advantages__item advantages__item--emphasis">
-            <div>
-              <h3 class="advantages__item-title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-              <p class="advantages__item-text">Да, по нему можно пройти!Если вы<br> осмелитесь, конечно</p>
-            </div>
-            <img class="advantages__images" width="520" height="260" src="img/advantages/devil's-bridge.jpg" alt="Фотография Седоны">
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-            <p class="advantages__item-text">Все интересные места находятся<br> очень близко</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item-title">КРАСИВАЯ ДОРОГА</h3>
-            <p class="advantages__item-text">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item-title">МАЛО ТУРИСТОВ</h3>
-            <p class="advantages__item-text">Большинство едет в гранд каньон<br>и толпится там</p>
-          </li>
-        </ul>
+      <section class="intro intro--secondary">
+        <h2 class="visually-hidden">Город Седона</h2>
+        <img class="intro__logo-text" width="229" height="39" src="img/sedona.svg" alt="Надпись Sedona">
       </section>
       <div class="information-message">
-        <h2 class="information-message__title title-block">Заинтересовались?</h2>
-        <p class="information-message__text">Укажите предполагаемые даты<br> поездки,и мы покажем вам лучшие<br> предложения гостиниц в Седоне</p>
-        <a class="information-message__button button" href="#">Найти Гостиницу</a>
+        <h2 class="information-message__title title-block">Фото и видео</h2>
+        <p class="information-message__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
-      <div class="map">
-        <img alt="Заглушка" src="http://dummyimage.com/320x350/00dd00" />
+      <section class="gallery">
+        <div class="gallery__card">
+          <img class="gallery__card-image" width="280" height="280" alt="Неродные просторы" src="img/gallery/photo-road.jpg">
+          <h3 class="gallery__card-title">Неродные просторы</h3>
+          <p class="gallery__card-autor">Автор фото: Борис</p>
+          <button class="gallery__card-button like">
+            <span class="visually-hidden">Лайк</span>
+            <span class="like__numbers">1350</span>
+          </button>
+        </div>
+        <div class="gallery__card">
+          <img class="gallery__card-image" width="280" height="280" alt="Местная растительность" src="img/gallery/photo-plants.jpg">
+          <h3 class="gallery__card-title">Местная растительность</h3>
+          <p class="gallery__card-autor">Автор фото: Сергей</p>
+          <button class="gallery__card-button like">
+            <span class="visually-hidden">Лайк</span>
+            <span class="like__numbers">143</span>
+          </button>
+        </div>
+        <div class="gallery__card">
+          <img class="gallery__card-image" width="280" height="280" alt="Дорога на север" src="img/gallery/photo-mountain-road.jpg">
+          <h3 class="gallery__card-title">Дорога на север</h3>
+          <p class="gallery__card-autor">Автор фото: Петр</p>
+          <button class="gallery__card-button like">
+            <span class="visually-hidden">Лайк</span>
+            <span class="like__numbers">96</span>
+          </button>
+        </div>
+        <div class="gallery__card">
+          <img class="gallery__card-image" width="280" height="280" alt="Мост дьявола" src="img/gallery/devil's-bridge.jpg">
+          <h3 class="gallery__card-title">Мост дьявола</h3>
+          <p class="gallery__card-autor">Автор фото: Антон</p>
+          <button class="gallery__card-button like">
+            <span class="visually-hidden">Лайк</span>
+            <span class="like__numbers">254</span>
+          </button>
+        </div>
+      </section>
+      <div class="information-message">
+        <h2 class="information-message__title title-block">Все еще сомневаетесь?</h2>
+        <p class="information-message__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      </div>
+      <div class="video">
+        <img class="video__preview" width="280" height="177" alt="Превью видео" src="img/gallery/video-desktop.jpg">
+        <button class="video__play-button">
+          <span class="visually-hidden">Play</span>
+        </button>
       </div>
     </main>
     <footer class="footer">
