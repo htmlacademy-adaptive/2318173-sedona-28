@@ -2,6 +2,13 @@
 
 .main-nav {
   display: inline-block;
+
+  &:hover,
+  &:active {
+    .main-nav__container {
+      display: block;
+    }
+  }
 }
 
 .main-nav__toggle {
@@ -18,13 +25,4 @@
   min-height: 223px;
   z-index: 1;
   background-color: @base-accent-color;
-}
-
-.main-nav {
-  &:hover,
-  &:active {
-    .main-nav__container {
-      display: block;
-    }
-  }
 }

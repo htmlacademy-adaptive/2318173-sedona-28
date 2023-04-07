@@ -7,14 +7,17 @@
   margin: 0;
   width: 280px;
   position: relative;
+
   .gallery__card-image {
     object-fit: cover;
     height: 280px;
     width: 100%;
   }
+
   &:not(:last-child) {
     margin-bottom: 50px;
   }
+
   &::before {
     position: absolute;
     content: " ";
@@ -24,6 +27,7 @@
     left: -20px;
     background-color: @decorative-color;
   }
+
   &:last-child::after {
     position: absolute;
     content: " ";
@@ -42,13 +46,13 @@
 }
 
 .gallery__card-title {
-  weight: 700;
+  font-weight: 700;
   margin: 0;
   text-transform: uppercase;
 }
 
 .gallery__card-autor {
-  eight: 400;
+  font-weight: 400;
   margin: 0;
   padding-bottom: 11px;
 }
