@@ -7,11 +7,29 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: @base-text-color;
+  color: @base-title-color;
   padding-right: 12px;
+  &:hover {
+  color:  @base-accent-color;
+  }
+  &:active {
+  color: #b3b3b3;
+  }
 }
 
 .academy-link__svg {
   vertical-align: middle;
   padding-left: 12px;
+}
+
+.academy-link svg {
+  fill: @base-title-color;
+}
+
+.academy-link:hover svg {
+  fill: @base-accent-color;
+}
+
+.academy-link:active svg {
+  fill: #b3b3b3;
 }
