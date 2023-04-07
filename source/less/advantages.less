@@ -18,7 +18,7 @@
 }
 
 .advantages__item {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   text-transform: uppercase;
   width: 320px;
@@ -27,6 +27,12 @@
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
+.advantages__images {
+    object-fit: cover;
+    height: 260px;
+    width: 100%;
+  }
 
 .advantages__item--top {
   background: url("../img/white.svg") no-repeat 0 -2%;
@@ -63,12 +69,6 @@
 
   &--emphasis::before {
     background: @base-background-color;
-  }
-
-  .advantages__images {
-    object-fit: cover;
-    height: 260px;
-    width: 100%;
   }
 }
 
