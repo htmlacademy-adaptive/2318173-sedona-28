@@ -1,0 +1,58 @@
+.gallery {
+  padding: 0 20px;
+}
+
+.gallery__card {
+  margin: 0;
+  width: 280px;
+  position: relative;
+
+  .gallery__card-image {
+    object-fit: cover;
+    height: 280px;
+    width: 100%;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 320px;
+    height: 1px;
+    top: -24px;
+    left: -20px;
+    background-color: @decorative-color;
+  }
+
+  &:last-child::after {
+    position: absolute;
+    content: " ";
+    width: 320px;
+    height: 1px;
+    bottom: -25px;
+    left: -20px;
+    background-color: @decorative-color;
+  }
+}
+
+.gallery__card-description {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 15px;
+}
+
+.gallery__card-title {
+  font-weight: 700;
+  color: @base-title-color;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.gallery__card-autor {
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 11px;
+}

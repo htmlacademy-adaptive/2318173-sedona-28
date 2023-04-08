@@ -1,0 +1,48 @@
+.site-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  width: 320px;
+  height: 55px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 18px;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: @secondary-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 17px 97px 14px 97px;
+
+  &--main {
+    padding-left: 123px;
+    padding-right: 123px;
+  }
+
+  &--form {
+    padding-left: 93px;
+    padding-right: 93px;
+  }
+
+  &:hover {
+    background-color: @hover-color;
+  }
+
+  &:focus {
+    background-color: @hover-color;
+  }
+
+  &:active {
+    background-color: @active-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

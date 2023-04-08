@@ -1,0 +1,35 @@
+.button {
+  font-family: @base-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: @secondary-text-color;
+  background-color: @base-accent-color;
+  min-width: 185px;
+  min-height: 58px;
+  padding: 16px 49px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @hover-color;
+  }
+
+  &:focus {
+    background-color: @hover-color;
+  }
+
+  &:active {
+    background-color: @active-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @decorative-color;
+  }
+}

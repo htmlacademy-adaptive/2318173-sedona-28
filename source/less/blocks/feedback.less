@@ -1,0 +1,133 @@
+.feedback {
+  padding: 0 20px;
+  position: relative;
+}
+
+.feeback__form {
+  width: 280px;
+}
+
+.feedback__title,
+.feedback__call {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.feedback__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding-bottom: 24px;
+  padding-top: 36px;
+  color: @base-title-color;
+
+  &--internal::before {
+    position: absolute;
+    content: " ";
+    width: 320px;
+    height: 1px;
+    top: 12px;
+    left: -22px;
+    background-color: @decorative-color;
+  }
+}
+
+.feedback__call {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.feedback__group {
+  padding: 0;
+  border: none;
+  padding-bottom: 28px;
+  position: relative;
+}
+
+.feedback__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding-left: 16px;
+}
+
+.feedback__input {
+  font-family: @base-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @base-title-color;
+  width: 280px;
+  height: 58px;
+  background: @page-background-color;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 4px solid @page-background-color;
+  margin-bottom: 16px;
+
+  &:placeholder-shown {
+    opacity: 60%;
+  }
+}
+
+.feedback__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback__item {
+  padding-bottom: 16px;
+}
+
+.feedback__group--message {
+  padding-bottom: 56px;
+}
+
+.feedback__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  color: @base-title-color;
+  padding-bottom: 16px;
+}
+
+.feedback__comment {
+  width: 279px;
+  height: 150px;
+  font-family: @base-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @base-title-color;
+  background: @page-background-color;
+  padding: 16px;
+  box-sizing: border-box;
+  resize: none;
+
+  &:placeholder-shown {
+    opacity: 60%;
+  }
+}
+
+.feedback__submit {
+  border: none;
+  margin-bottom: 46px;
+}
+
+.feedback__info-text {
+  position: absolute;
+  content: "";
+  font-size: 12px;
+  line-height: 21px;
+  color: @base-text-color;
+  text-transform: uppercase;
+  opacity: 60%;
+  right: 20px;
+  bottom: 25px;
+}

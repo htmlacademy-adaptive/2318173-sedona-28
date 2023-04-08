@@ -1,0 +1,27 @@
+.social-list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.social-list__item {
+  padding-right: 6px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.social-list__link svg {
+  fill: @base-accent-color;
+}
+
+.social-list__link:hover svg {
+  fill: @hover-color;
+}
+
+.social-list__link:active svg {
+  fill: @active-color;
+}
