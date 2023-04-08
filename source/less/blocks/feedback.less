@@ -1,5 +1,3 @@
-@import "./global.less";
-
 .feedback {
   padding: 0 20px;
   position: relative;
@@ -22,6 +20,7 @@
   line-height: 26px;
   padding-bottom: 24px;
   padding-top: 36px;
+  color: @base-title-color;
 
   &--internal::before {
     position: absolute;
@@ -55,7 +54,7 @@
 }
 
 .feedback__input {
-  font-family: "PT Sans", sans-serif;
+  font-family: @base-font;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -93,13 +92,14 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  color: @base-title-color;
   padding-bottom: 16px;
 }
 
 .feedback__comment {
   width: 279px;
   height: 150px;
-  font-family: "PT Sans", sans-serif;
+  font-family: @base-font;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
