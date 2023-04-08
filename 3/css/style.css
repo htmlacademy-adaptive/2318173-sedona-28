@@ -2,35 +2,21 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans.woff2") format(woff2);
+  src: url("../fonts/ptsans.woff2") format(woff2), url("../fonts/ptsans.woff") format(woff);
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsansbold.woff2") format(woff2);
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans.woff") format(woff);
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsansbold.woff") format(woff);
+  src: url("../fonts/ptsansbold.woff2") format(woff2), url("../fonts/ptsansbold.woff") format(woff);
   font-display: swap;
 }
 .page {
   height: 100%;
 }
 .page__body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
@@ -153,7 +139,6 @@
   background-color: #f2f2f2;
   background-size: cover;
   text-align: center;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +147,6 @@
   height: 158px;
   background-size: 280%;
   background-position: center bottom;
-  filter: none;
 }
 .advantages {
   text-align: center;
@@ -179,7 +163,7 @@
   counter-reset: section;
 }
 .advantages__item {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   text-transform: uppercase;
   width: 320px;
@@ -213,18 +197,14 @@
 .advantages__item-title--emphasis::before {
   position: absolute;
   counter-increment: section;
-  content: "№ " counter(section) " ";
+  content: "— №" counters(section, ".") " —";
   height: 1px;
-  background: #000000;
   left: 85px;
   right: 85px;
-  bottom: 31px;
+  bottom: 37px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-}
-.advantages__item-title--emphasis::before {
-  background: #ffffff;
 }
 .advantages__item-text {
   font-weight: 400;
@@ -244,7 +224,7 @@
   padding-bottom: 37px;
 }
 .advantages-title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   height: 221px;
 }
@@ -331,7 +311,7 @@
   color: #000000;
 }
 .button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -460,6 +440,7 @@
 }
 .gallery__card-title {
   font-weight: 700;
+  color: #000000;
   margin: 0;
   text-transform: uppercase;
 }
@@ -469,7 +450,7 @@
   padding-bottom: 11px;
 }
 .like .like__numbers {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -512,6 +493,7 @@
   line-height: 26px;
   padding-bottom: 24px;
   padding-top: 36px;
+  color: #000000;
 }
 .feedback__title--internal::before {
   position: absolute;
@@ -540,7 +522,7 @@
   padding-left: 16px;
 }
 .feedback__input {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -573,12 +555,13 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  color: #000000;
   padding-bottom: 16px;
 }
 .feedback__comment {
   width: 279px;
   height: 150px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
