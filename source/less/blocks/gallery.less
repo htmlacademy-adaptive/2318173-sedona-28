@@ -1,5 +1,18 @@
 .gallery {
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    grid-template-rows: 480px 347px 347px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 400px 268px;
+    padding: 0;
+  }
 }
 
 .gallery__card {
@@ -7,14 +20,50 @@
   width: 280px;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 347px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 268px;
+  }
+
   .gallery__card-image {
     object-fit: cover;
     height: 280px;
     width: 100%;
+
+    @media (min-width: @tablet-width) {
+      height: 267px;
+    }
+  }
+
+  &--first {
+    @media (min-width: @tablet-width) {
+      width: 648px;
+      height: 480px;
+      grid-column: -1 / 1;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+      height: 400px;
+      grid-column: -1 / 1;
+    }
+
+    .gallery__card-image {
+      height: 400px;
+    }
   }
 
   &:not(:last-child) {
     margin-bottom: 50px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+    }
   }
 
   &::before {
@@ -25,6 +74,10 @@
     top: -24px;
     left: -20px;
     background-color: @decorative-color;
+
+    @media (min-width: @tablet-width) {
+      visibility: hidden;
+    }
   }
 
   &:last-child::after {
@@ -35,6 +88,10 @@
     bottom: -25px;
     left: -20px;
     background-color: @decorative-color;
+
+    @media (min-width: @tablet-width) {
+      visibility: hidden;
+    }
   }
 }
 
@@ -42,6 +99,45 @@
   font-size: 14px;
   line-height: 21px;
   margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 22px 20px 15px 20px;
+    width: 324px;
+    height: 80px;
+    box-sizing: border-box;
+    margin: 0;
+    background: @page-background-color;
+    position: absolute;
+    content: " ";
+    bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  &--first {
+    @media (min-width: @tablet-width) {
+      width: 648px;
+      height: 80px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: @tablet-width) {
+      background: #eaeaea;
+    }
+  }
 }
 
 .gallery__card-title {
@@ -49,10 +145,21 @@
   color: @base-title-color;
   margin: 0;
   text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    color: @secondary-text-color;
+  }
 }
 
 .gallery__card-autor {
   font-weight: 400;
   margin: 0;
   padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    color: @secondary-text-color;
+  }
 }

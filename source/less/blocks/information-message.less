@@ -4,12 +4,29 @@
   padding-top: 38px;
   padding-bottom: 49px;
 
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    padding: 60px 155px 55px 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 371px 66px 371px;
+  }
+
   &--error {
     padding: 45px 42px 35px 41px;
   }
 
   &--gallery {
     padding: 30px 20px 60px 20px;
+
+    @media (min-width: @tablet-width) {
+      padding: 60px 155px 55px 155px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 60px 371px 66px 371px;
+    }
   }
 }
 
@@ -30,6 +47,10 @@
 
 .information-message__button {
   margin-top: 32px;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
 
   &--error {
     margin-top: 25px;

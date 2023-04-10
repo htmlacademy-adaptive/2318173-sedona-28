@@ -5,6 +5,11 @@
   background-color: @base-background-color;
   padding: 23px 0 46px 60px;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding: 0;
+  }
 }
 
 .internal-list__item {
@@ -12,6 +17,28 @@
 
   &:last-child {
     padding-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 190px;
+    min-height: 114px;
+    padding: 153px 33px 64px 33px;
+    text-align: center;
+
+    &:last-child {
+      padding-bottom: 64px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 190px;
+    min-height: 114px;
+    padding: 169px 50px 69px 50px;
+    text-align: center;
+
+    &:last-child {
+      padding-bottom: 69px;
+    }
   }
 }
 
@@ -22,6 +49,11 @@
   font-size: 18px;
   line-height: 26px;
   color: @base-title-color;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 25px;
+    font-size: 21px;
+  }
 }
 
 .internal-list__text {
@@ -30,4 +62,8 @@
   font-size: 14px;
   line-height: 21px;
   color: @base-text-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+  }
 }

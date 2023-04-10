@@ -1,6 +1,19 @@
 .footer {
   text-align: center;
   padding: 33px 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .footer__list {
