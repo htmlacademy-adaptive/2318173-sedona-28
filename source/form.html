@@ -18,17 +18,25 @@
           </button>
           <div class="main-nav__container">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link site-list__link--main" href="index.html">Главная</a>
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">
+                  <span class="site-list__text">Главная</span>
+                </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--catalog" href="catalog.html">Фото и видео</a>
+                <a class="site-list__link" href="catalog.html">
+                  <span class="site-list__text">Фото и видео</span>
+                </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--form" href="form.html">Форма отзыва</a>
+                <a class="site-list__link site-list__link--current" href="form.html">
+                  <span class="site-list__text">Форма отзыва</span>
+                </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/study">HTML ACADEMY</a>
+                <a class="site-list__link" href="https://htmlacademy.ru/study">
+                  <span class="site-list__text">HTML ACADEMY</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -41,7 +49,7 @@
           <img class="intro__logo-text" width="229" height="39" src="img/sedona.svg" alt="Надпись Sedona">
         </section>
         <section class="feedback">
-          <h2 class="feedback__title">Оставьте свой отзыв</h2>
+          <h2 class="feedback__title feedback__title--main">Оставьте свой отзыв</h2>
           <p class="feedback__call">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="Post">
             <fieldset class="feedback__group feedback__group--name">
@@ -64,21 +72,21 @@
               <legend class="feedback__title feedback__title--internal">Ваше Общее впечатление:</legend>
               <ul class="feedback__list">
                 <li class="feedback__item">
-                  <label class="feedback__label">
+                  <label class="feedback__label feedback__label--checklist">
                     <input class="feedback__input-radio visually-hidden" type="radio" name="impression" value="positive" checked>
                     <span class="feedback__control-mark"></span>
                     <span class="feedback__text">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="feedback__item">
-                  <label class="feedback__label">
+                  <label class="feedback__label feedback__label--checklist">
                     <input class="feedback__input-radio visually-hidden" type="radio" name="impression" value="negative">
                     <span class="feedback__control-mark"></span>
                     <span class="feedback__text">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="feedback__item">
-                  <label class="feedback__label">
+                  <label class="feedback__label feedback__label--checklist">
                     <input class="feedback__input-radio visually-hidden" type="radio" name="impression" value="difficult">
                     <span class="feedback__control-mark"></span>
                     <span class="feedback__text">Затрудняюсь ответить</span>
@@ -86,32 +94,32 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="feedback__group feedback__group-attractions">
-              <legend class="feedback__title feedback__title--internal">Посещенные достопримечательности:</legend>
+            <fieldset class="feedback__group feedback__group--attractions">
+              <legend class="feedback__title feedback__title--internal feedback__title--checklist">Посещенные достопримечательности:</legend>
               <ul class="feedback__list">
-                <li class="feedback__item">
-                  <label class="feedback__label">
+                <li class="feedback__item feedback__item--checkbox">
+                  <label class="feedback__label feedback__label--checklist">
                     <input class="feedback__input-checkbox visually-hidden" type="checkbox" name="Devil's Bridge" checked>
                     <span class="feedback__attractions-mark"></span>
                     <span class="feedback__text">Мост Дьявола</span>
                   </label>
                 </li>
-                <li class="feedback__item">
-                  <label class="feedback__label">
+                <li class="feedback__item feedback__item--checkbox">
+                  <label class="feedback__label feedback__label--checklist">
                     <input class="feedback__input-checkbox visually-hidden" type="checkbox" name="The Bell Mountain" checked>
                     <span class="feedback__attractions-mark"></span>
                     <span class="feedback__text">Гора-Колокол</span>
                   </label>
                 </li>
-                <li class="feedback__item">
-                  <label class="feedback__label">
+                <li class="feedback__item feedback__item--checkbox">
+                  <label class="feedback__label feedback__label--checklist">
                     <input class="feedback__input-checkbox visually-hidden" type="checkbox" name="Slide Park" checked>
                     <span class="feedback__attractions-mark"></span>
                     <span class="feedback__text">Слайд-парк</span>
                   </label>
                 </li>
-                <li class="feedback__item">
-                  <label class="feedback__label">
+                <li class="feedback__item feedback__item--checkbox">
+                  <label class="feedback__label feedback__label--checklist">
                     <input class="feedback__input-checkbox visually-hidden" type="checkbox" name="Red Rocks">
                     <span class="feedback__attractions-mark"></span>
                     <span class="feedback__text">Красные скалы</span>
@@ -166,7 +174,7 @@
       </div>
       <div class="modal-container modal-container--sent modal-container--hidden">
         <div class="modal-window modal-window--sent">
-          <div class="information-message">
+          <div class="information-message information-message--sent">
             <div class="modal-window__text-container">
               <h2 class="information-message__title title-block">Ваш отзыв отправлен!</h2>
               <p class="information-message__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>

@@ -4,12 +4,47 @@
   padding-top: 38px;
   padding-bottom: 49px;
 
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    padding: 60px 155px 55px 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 371px 66px 371px;
+  }
+
   &--error {
     padding: 45px 42px 35px 41px;
+
+    @media (min-width: @tablet-width) {
+      width: 307px;
+      height: 248px;
+      padding: 50px 46px 49px 47px;
+    }
+  }
+
+  &--sent {
+    width: 244px;
+    height: 156px;
+    padding-top: 39px;
+    padding-bottom: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 444px;
+      padding: 53px 0 0 0;
+    }
   }
 
   &--gallery {
     padding: 30px 20px 60px 20px;
+
+    @media (min-width: @tablet-width) {
+      padding: 60px 155px 55px 155px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 60px 371px 66px 371px;
+    }
   }
 }
 
@@ -26,12 +61,26 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
+
+  &--error {
+    @media (min-width: @tablet-width) {
+      padding-bottom: 35px;
+    }
+  }
 }
 
 .information-message__button {
   margin-top: 32px;
 
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
+
   &--error {
     margin-top: 25px;
+
+    @media (min-width: @tablet-width) {
+      width: 272px;
+    }
   }
 }

@@ -9,9 +9,31 @@
   align-items: center;
   justify-content: center;
 
+  @media (min-width: @tablet-width) {
+    min-height: 461px;
+    background-size: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 461px;
+    background-size: auto;
+  }
+
   &--secondary {
-    height: 158px;
+    max-height: 158px;
     background-size: 280%;
     background-position: center bottom;
+
+    @media (min-width: @tablet-width) {
+      min-height: 289px;
+      max-height: 290px;
+      background-size: cover;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 300px;
+      max-height: 301px;
+      background-size: auto;
+    }
   }
 }
