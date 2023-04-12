@@ -1,5 +1,5 @@
 .gallery {
-  padding: 0 20px;
+  padding: 0 6.25%;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -17,7 +17,7 @@
 
 .gallery__card {
   margin: 0;
-  width: 280px;
+  min-width: 280px;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -69,10 +69,10 @@
   &::before {
     position: absolute;
     content: " ";
-    width: 320px;
+    width: 115%;
     height: 1px;
     top: -24px;
-    left: -20px;
+    left: -6.3%;
     background-color: @decorative-color;
 
     @media (min-width: @tablet-width) {
@@ -83,10 +83,10 @@
   &:last-child::after {
     position: absolute;
     content: " ";
-    width: 320px;
+    width: 115%;
     height: 1px;
     bottom: -25px;
-    left: -20px;
+    left: -6.3%;
     background-color: @decorative-color;
 
     @media (min-width: @tablet-width) {
