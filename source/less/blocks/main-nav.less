@@ -1,5 +1,7 @@
 .main-nav {
   display: inline-block;
+  width: 100%;
+  position: relative;
 
   &:hover,
   &:active {
@@ -26,6 +28,8 @@
   height: 22px;
   margin-top: 17px;
   margin-bottom: 17px;
+  position: absolute;
+  right: 20px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -36,6 +40,7 @@
   display: none;
   position: absolute;
   min-width: 320px;
+  width: 100%;
   min-height: 223px;
   z-index: 1;
   background-color: @base-accent-color;
@@ -44,13 +49,8 @@
     display: flex;
     position: static;
     justify-content: space-between;
-    width: 768px;
     margin: 0 auto;
     background-color: transparent;
     min-height: 56px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
   }
 }
