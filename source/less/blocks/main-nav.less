@@ -8,9 +8,8 @@
     position: absolute;
     top: 17px;
     right: 20px;
-    width: 36px;
+    width: 22px;
     height: 4px;
-    width: 30px;
     background-color: @base-accent-color;
     box-shadow: 0 9px 0 0 @base-accent-color, 0 18px 0 0 @base-accent-color;
   }
@@ -18,15 +17,15 @@
   &--closed .main-nav__toggle:hover::before {
     background-color: fade(@base-accent-color, 60%);
     box-shadow:
-    0 9px 0 0 fade(@base-accent-color, 60%),
-    0 18px 0 0 fade(@base-accent-color, 60%);
+      0 9px 0 0 fade(@base-accent-color, 60%),
+      0 18px 0 0 fade(@base-accent-color, 60%);
   }
 
   &--closed .main-nav__toggle:active::before {
     background-color: fade(@base-accent-color, 30%);
     box-shadow:
-    0 9px 0 0 fade(@base-accent-color, 30%),
-    0 18px 0 0 fade(@base-accent-color, 30%);
+      0 9px 0 0 fade(@base-accent-color, 30%),
+      0 18px 0 0 fade(@base-accent-color, 30%);
   }
 
   &--closed {
