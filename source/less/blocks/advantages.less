@@ -22,7 +22,7 @@
   counter-reset: section;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    min-width: 768px;
   }
 
   @media (min-width: @desktop-width) {
@@ -56,13 +56,13 @@
 
   @media (min-width: @tablet-width) {
     min-width: 256px;
-    width: 33%;
+    width: 33.3%;
     padding: 41px 33px 63px 33px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 400px;
-    width: 33%;
+    width: 33.3%;
     height: 256px;
     padding: 52px 50px;
   }
@@ -78,6 +78,7 @@
       min-width: 768px;
       width: 100%;
       flex-direction: row;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
 
