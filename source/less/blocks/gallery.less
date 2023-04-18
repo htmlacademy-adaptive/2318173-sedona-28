@@ -27,6 +27,14 @@
     height: 268px;
   }
 
+
+  &:nth-child(3) {
+    @media (min-width: @tablet-width) {
+      background: #eaeaea;
+    }
+  }
+
+
   .gallery__card-image {
     object-fit: cover;
     height: 280px;
@@ -64,10 +72,10 @@
   &::before {
     position: absolute;
     content: " ";
-    width: 115%;
     height: 1px;
     top: -24px;
-    left: -6.3%;
+    left: -20px;
+    right: -20px;
     background-color: @decorative-color;
 
     @media (min-width: @tablet-width) {
@@ -113,12 +121,6 @@
 
   @media (min-width: @desktop-width) {
     background: rgba(0, 0, 0, 0.3);
-  }
-
-  &:nth-child(3) {
-    @media (min-width: @tablet-width) {
-      background: #eaeaea;
-    }
   }
 }
 
