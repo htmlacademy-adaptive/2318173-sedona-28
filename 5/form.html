@@ -66,9 +66,13 @@
             <fieldset class="feedback__group feedback__group--contacts">
               <legend class="feedback__title feedback__title--internal">Контактная информация:</legend>
                 <label class="feedback__label" for="tel">Контактный телефон*:</label>
-                <input class="feedback__input feedback__input--contact" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+                <div class="feedback__container--tel">
+                  <input class="feedback__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+                </div>
                 <label class="feedback__label" for="email">Электронная почта*:</label>
-                <input class="feedback__input feedback__input--contact" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <div class="feedback__container--email">
+                  <input class="feedback__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                </div>
             </fieldset>
             <fieldset class="feedback__group feedback__group--impression">
               <legend class="feedback__title feedback__title--internal feedback__title--option">Ваше Общее впечатление:</legend>
