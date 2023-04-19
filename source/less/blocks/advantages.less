@@ -22,7 +22,7 @@
   counter-reset: section;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    min-width: 768px;
   }
 
   @media (min-width: @desktop-width) {
@@ -46,23 +46,23 @@
     &:nth-child(5)::before {
       position: absolute;
       content: " ";
-      width: 284px;
       height: 1px;
       top: 0;
       left: 18px;
+      right: 18px;
       background-color: #d6d6d6;
     }
   }
 
   @media (min-width: @tablet-width) {
     min-width: 256px;
-    width: 33%;
+    width: 33.3%;
     padding: 41px 33px 63px 33px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 400px;
-    width: 33%;
+    width: 33.3%;
     height: 256px;
     padding: 52px 50px;
   }
@@ -78,6 +78,7 @@
       min-width: 768px;
       width: 100%;
       flex-direction: row;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
 
@@ -129,11 +130,8 @@
 .advantages__item--top {
   background: url("../img/white.svg") no-repeat 0 -2%;
   background-color: @base-accent-color;
+  background-size: contain;
   padding-top: 41px;
-
-  @media (min-width: 321px) {
-    background: @base-accent-color;
-  }
 
   @media (min-width: @tablet-width) {
     background: @base-accent-color;

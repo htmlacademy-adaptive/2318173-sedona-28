@@ -14,21 +14,22 @@
 .feedback__form {
   min-width: 280px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 
 
   @media (min-width: @tablet-width) {
     min-width: 648px;
     display: grid;
-    grid-template-columns: repeat(2, 295px);
-    grid-template-rows: 338px 210px 231px;
+    grid-template-columns: repeat(2, 45.5%);
     row-gap: 63px;
-    column-gap: 58px;
+    column-gap: 9%;
+    align-items: normal;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 960px;
     grid-template-columns: repeat(2, 430px);
-    grid-template-rows: 338px 190px 190px;
     column-gap: 100px;
   }
 
@@ -39,16 +40,7 @@
       background: #dbdbdb;
       width: 1px;
       height: 338px;
-      left: 323px;
-    }
-
-    @media (min-width: @desktop-width) {
-      position: absolute;
-      content: " ";
-      background: #dbdbdb;
-      width: 1px;
-      height: 338px;
-      left: 480px;
+      left: 50%;
     }
   }
 }
@@ -77,31 +69,32 @@
   }
 
   &--internal {
+    &::before {
+      position: absolute;
+      content: " ";
+      height: 1px;
+      top: 12px;
+      left: -20px;
+      right: -20px;
+      background-color: @decorative-color;
+    }
+
     @media (min-width: @tablet-width) {
       font-size: 21px;
       line-height: 26px;
       padding-left: 0;
       padding-top: 0;
+
+      &::before {
+        display: none;
+      }
     }
   }
 
   &--checklist {
     @media (min-width: @tablet-width) {
       padding: 0 86px 26px 86px;
-    }
-  }
-
-  &--internal::before {
-    position: absolute;
-    content: " ";
-    width: 320px;
-    height: 1px;
-    top: 12px;
-    left: -22px;
-    background-color: @decorative-color;
-
-    @media (min-width: @tablet-width) {
-      visibility: hidden;
+      width: 306px;
     }
   }
 }
@@ -128,12 +121,24 @@
   flex-direction: column;
 
   &--name {
+    .feedback__title--internal::before {
+      @media (min-width: @tablet-width) {
+        visibility: hidden;
+      }
+    }
+
     @media (min-width: @tablet-width) {
       grid-column: 1 / 2;
     }
   }
 
   &--contacts {
+    .feedback__title--internal::before {
+      @media (min-width: @tablet-width) {
+        visibility: hidden;
+      }
+    }
+
     @media (min-width: @tablet-width) {
       grid-column: 2 / 3;
     }
@@ -143,9 +148,39 @@
     @media (min-width: @tablet-width) {
       grid-column: -1 / 1;
       padding: 0 36px;
+
+      &::before {
+        position: absolute;
+        content: " ";
+        width: 123px;
+        height: 1px;
+        background: #dbdbdb;
+        left: 0;
+        top: -35px;
+      }
+
+      &::after {
+        position: absolute;
+        content: " ";
+        width: 123px;
+        height: 1px;
+        background: #dbdbdb;
+        right: 0;
+        top: -35px;
+      }
     }
 
     @media (min-width: @desktop-width) {
+      &::before {
+        width: 280px;
+        left: 0;
+      }
+
+      &::after {
+        width: 280px;
+        right: 0;
+      }
+
       padding: 0 53px;
     }
   }
@@ -154,9 +189,39 @@
     @media (min-width: @tablet-width) {
       grid-column: -1 / 1;
       padding: 0 84px;
+
+      &::before {
+        position: absolute;
+        content: " ";
+        width: 123px;
+        height: 1px;
+        background: #dbdbdb;
+        left: 0;
+        top: -55px;
+      }
+
+      &::after {
+        position: absolute;
+        content: " ";
+        width: 123px;
+        height: 1px;
+        background: #dbdbdb;
+        right: 0;
+        top: -55px;
+      }
     }
 
     @media (min-width: @desktop-width) {
+      &::before {
+        width: 280px;
+        left: 0;
+      }
+
+      &::after {
+        width: 280px;
+        right: 0;
+      }
+
       padding: 0 44px;
     }
   }
@@ -167,6 +232,38 @@
     @media (min-width: @tablet-width) {
       grid-column: -1 / 1;
       padding-bottom: 48px;
+
+      &::before {
+        position: absolute;
+        content: " ";
+        width: 123px;
+        height: 1px;
+        background: #dbdbdb;
+        left: 0;
+        top: -35px;
+      }
+
+      &::after {
+        position: absolute;
+        content: " ";
+        width: 123px;
+        height: 1px;
+        background: #dbdbdb;
+        right: 0;
+        top: -35px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      &::before {
+        width: 280px;
+        left: 0;
+      }
+
+      &::after {
+        width: 280px;
+        right: 0;
+      }
     }
   }
 }
@@ -188,17 +285,30 @@
   box-sizing: border-box;
   padding: 10px 33px 10px 62px;
 
+  &--checklist {
+    position: relative;
+    margin-bottom: 16px;
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 16px;
   }
 
   &--checkbox {
     width: 224px;
+    position: relative;
     padding-right: 40px;
+    margin-bottom: 16px;
 
     &:nth-child(odd) {
       @media (min-width: @tablet-width) {
         margin-right: 26px;
+      }
+    }
+
+    &:not(:last-child) {
+      @media (min-width: @desktop-width) {
+        margin-right: 44px;
       }
     }
 
@@ -228,7 +338,7 @@
   font-size: 18px;
   line-height: 26px;
   color: @base-title-color;
-  width: 280px;
+  width: 100%;
   height: 58px;
   background: @page-background-color;
   padding: 16px;
@@ -242,6 +352,7 @@
 
   &:hover {
     background: @decorative-color;
+    border: 4px solid @decorative-color;
   }
 
   &:focus {
@@ -253,13 +364,31 @@
     background: @base-background-color;
     border: 4px solid @decorative-color;
   }
+}
 
-  @media (min-width: @tablet-width) {
-    width: 295px;
+.feedback__container {
+  position: relative;
+
+  &--email {
+    &::after {
+      position: absolute;
+      content: " ";
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background: #e6e6e6 url("../img/form/mail.svg") no-repeat 50% 50%;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    width: 430px;
+  &--tel {
+    &::after {
+      position: absolute;
+      content: " ";
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background: #e6e6e6 url("../img/form/phone.svg") no-repeat 50% 50%;
+    }
   }
 }
 
@@ -273,7 +402,7 @@
 }
 
 .feedback__comment {
-  width: 279px;
+  width: 100%;
   height: 150px;
   font-family: @base-font;
   font-style: normal;
@@ -285,19 +414,19 @@
   padding: 16px;
   box-sizing: border-box;
   resize: none;
+  border: none;
 
   &:placeholder-shown {
     opacity: 60%;
   }
 
   @media (min-width: @tablet-width) {
-    width: 648px;
     height: 160px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 768px;
     margin: 0 96px;
+    width: 768px;
   }
 }
 
@@ -325,14 +454,81 @@
   color: @base-text-color;
   text-transform: uppercase;
   opacity: 60%;
-  right: 20px;
+  right: 0;
   bottom: 25px;
 
   @media (min-width: @tablet-width) {
     bottom: 55px;
+    font-size: 14px;
   }
 
   @media (min-width: @desktop-width) {
     right: 100px;
   }
+}
+
+.feedback__control-mark {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 46px;
+  height: 46px;
+  margin-right: 16px;
+  background: @page-background-color;
+  border-radius: 50%;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+.feedback__input-radio[type="radio"]:checked + .feedback__control-mark::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: @base-text-color;
+  border-radius: 50%;
+}
+
+.feedback__input-radio[type="radio"]:hover + .feedback__control-mark {
+  background-color: @decorative-color;
+}
+
+.feedback__input-radio[type="radio"]:active + .feedback__control-mark {
+  background-color: #d5d5d5;
+
+  &::before {
+    opacity: 0.3;
+  }
+}
+
+.feedback__attractions-mark {
+  position: absolute;
+  content: "";
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 46px;
+  height: 46px;
+  margin-right: 16px;
+  background: @page-background-color;
+  border-radius: 4px;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+.feedback__input-checkbox[type="checkbox"]:checked + .feedback__attractions-mark {
+  background: @page-background-color url("../img/form/tick.svg") no-repeat 50% 50%;
+}
+
+.feedback__input-checkbox[type="checkbox"]:hover + .feedback__attractions-mark {
+  background-color: @decorative-color;
+}
+
+.feedback__input-checkbox[type="checkbox"]:active + .feedback__attractions-mark {
+  background-color: #d5d5d5;
 }

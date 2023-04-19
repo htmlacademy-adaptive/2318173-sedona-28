@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
+    <!-- <script src="../js/script.js"></script> -->
     <div class="page__body-container">
       <header class="main-header">
         <a class="main-header__logo" href="#">
           <img class="main-header__logo-image" alt="логотип Седона" width="185" height="96" src="img/logo.svg">
         </a>
-        <nav class="main-header__nav main-nav">
+        <nav class="main-header__nav main-nav main-nav--closed ">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__container">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">
+              <li class="site-list__item ">
+                <a class="site-list__link site-list__link--current" href="index.html">
                   <span class="site-list__text">Главная</span>
                 </a>
               </li>
@@ -29,7 +30,7 @@
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--current" href="form.html">
+                <a class="site-list__link" href="form.html">
                   <span class="site-list__text">Форма отзыва</span>
                 </a>
               </li>
@@ -64,28 +65,32 @@
             <fieldset class="feedback__group feedback__group--contacts">
               <legend class="feedback__title feedback__title--internal">Контактная информация:</legend>
                 <label class="feedback__label" for="tel">Контактный телефон*:</label>
-                <input class="feedback__input feedback__input--contact" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+                <div class="feedback__container--tel">
+                  <input class="feedback__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+                </div>
                 <label class="feedback__label" for="email">Электронная почта*:</label>
-                <input class="feedback__input feedback__input--contact" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <div class="feedback__container--email">
+                  <input class="feedback__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                </div>
             </fieldset>
             <fieldset class="feedback__group feedback__group--impression">
-              <legend class="feedback__title feedback__title--internal">Ваше Общее впечатление:</legend>
+              <legend class="feedback__title feedback__title--internal feedback__title--option">Ваше Общее впечатление:</legend>
               <ul class="feedback__list">
-                <li class="feedback__item">
+                <li class="feedback__item feedback__item--checklist">
                   <label class="feedback__label feedback__label--checklist">
                     <input class="feedback__input-radio visually-hidden" type="radio" name="impression" value="positive" checked>
                     <span class="feedback__control-mark"></span>
                     <span class="feedback__text">Скорее положительное</span>
                   </label>
                 </li>
-                <li class="feedback__item">
+                <li class="feedback__item feedback__item--checklist">
                   <label class="feedback__label feedback__label--checklist">
                     <input class="feedback__input-radio visually-hidden" type="radio" name="impression" value="negative">
                     <span class="feedback__control-mark"></span>
                     <span class="feedback__text">Скорее отрицательное</span>
                   </label>
                 </li>
-                <li class="feedback__item">
+                <li class="feedback__item feedback__item--checklist">
                   <label class="feedback__label feedback__label--checklist">
                     <input class="feedback__input-radio visually-hidden" type="radio" name="impression" value="difficult">
                     <span class="feedback__control-mark"></span>
@@ -128,7 +133,7 @@
               </ul>
             </fieldset>
             <fieldset class="feedback__group feedback__group--message">
-              <legend class="feedback__title feedback__title--internal">Опишите свои эмоции:</legend>
+              <legend class="feedback__title feedback__title--internal feedback__title--message">Опишите свои эмоции:</legend>
               <textarea class="feedback__comment" name="message" cols="30" rows="4" placeholder="Опишите подробно все свои восторги "></textarea>
             </fieldset>
             <input class="feedback__submit button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">

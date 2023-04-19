@@ -2,6 +2,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -19,19 +20,10 @@
 
   @media (min-width: @tablet-width) {
     box-shadow: none;
-    min-width: 153px;
+    min-width: 20%;
 
     &:nth-child(2) {
-      padding-right: 153px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    box-shadow: none;
-    min-width: 240px;
-
-    &:nth-child(2) {
-      padding-right: 240px;
+      margin-right: 20%;
     }
   }
 }

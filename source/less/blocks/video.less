@@ -1,10 +1,10 @@
 .video {
-  width: 280px;
-  padding: 0 20px;
+  min-width: 280px;
+  padding: 0 6.25%;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    width: 648px;
+    min-width: 648px;
     padding: 0 60px;
   }
 
@@ -31,4 +31,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background: transparent url("../img/gallery/play.svg") no-repeat 0 50%;
+  border: none;
 }
