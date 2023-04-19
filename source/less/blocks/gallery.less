@@ -29,8 +29,14 @@
 
 
   &:nth-child(3) {
-    @media (min-width: @tablet-width) {
-      background: #eaeaea;
+    .gallery__card-description {
+      @media (min-width: @tablet-width) {
+        background: #eaeaea;
+      }
+
+      @media (min-width: @desktop-width) {
+        background: rgba(0, 0, 0, 0.3);
+      }
     }
   }
 
@@ -79,21 +85,21 @@
     background-color: @decorative-color;
 
     @media (min-width: @tablet-width) {
-      visibility: hidden;
+      display: none;
     }
   }
 
   &:last-child::after {
     position: absolute;
     content: " ";
-    width: 115%;
     height: 1px;
     bottom: -25px;
-    left: -6.3%;
+    left: -20px;
+    right: -20px;
     background-color: @decorative-color;
 
     @media (min-width: @tablet-width) {
-      visibility: hidden;
+      display: none;
     }
   }
 }
