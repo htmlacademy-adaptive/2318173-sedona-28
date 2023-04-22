@@ -1,5 +1,13 @@
+.map {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .map__images {
-  object-fit: cover;
-  height: 350px;
-  width: 100%;
+  @media (max-width: @mobile-width-only) {
+    object-fit: cover;
+    width: 100%;
+  }
 }

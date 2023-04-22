@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фото и видео</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <!-- <script src="../js/script.js"></script> -->
@@ -20,12 +24,12 @@
           <div class="main-nav__container">
             <ul class="main-nav__list site-list">
               <li class="site-list__item ">
-                <a class="site-list__link site-list__link--current" href="index.html">
+                <a class="site-list__link" href="index.html">
                   <span class="site-list__text">Главная</span>
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">
+                <a class="site-list__link site-list__link--current" href="catalog.html">
                   <span class="site-list__text">Фото и видео</span>
                 </a>
               </li>
@@ -55,7 +59,11 @@
         </div>
         <section class="gallery">
           <figure class="gallery__card gallery__card--first">
-            <img class="gallery__card-image"  alt="Неродные просторы" src="img/gallery/photo-road.jpg">
+            <picture class="gallery__picture">
+                <source media="(min-width: 1200px)" height="400" width="1200" srcset="img/gallery/photo-road-desktop@1x.jpg 1x, img/gallery/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" height="400" width="648" srcset="img/gallery/photo-road-tablet@1x.jpg 1x, img/gallery/photo-road-tablet@2x.jpg 2x">
+                <img class="gallery__card-image"  alt="Неродные просторы" src="img/gallery/photo-road-mobile@1x.jpg" srcset="img/gallery/photo-road-mobile@2x.jpg 2x">
+              </picture>
             <figcaption class="gallery__card-description gallery__card-description--first">
               <div class="gallery__card-text">
                 <h3 class="gallery__card-title">Неродные просторы</h3>
@@ -68,7 +76,11 @@
             </figcaption>
           </figure>
           <figure class="gallery__card">
-            <img class="gallery__card-image" alt="Местная растительность" src="img/gallery/photo-plants.jpg">
+            <picture class="gallery__picture">
+              <source media="(min-width: 1200px)" height="267" width="400" srcset="img/gallery/photo-plants-desktop@1x.jpg 1x, img/gallery/photo-plants-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" height="267" width="324" srcset="img/gallery/photo-plants-tablet@1x.jpg 1x, img/gallery/photo-plants-tablet@2x.jpg 2x">
+              <img class="gallery__card-image"  alt="Неродные просторы" src="img/gallery/photo-plants-mobile@1x.jpg" srcset="img/gallery/photo-plants-mobile@2x.jpg 2x">
+            </picture>
             <figcaption class="gallery__card-description">
               <div class="gallery__card-text">
                 <h3 class="gallery__card-title">Местная растительность</h3>
@@ -81,7 +93,11 @@
             </figcaption>
           </figure>
           <figure class="gallery__card">
-            <img class="gallery__card-image" alt="Дорога на север" src="img/gallery/photo-mountain-road.jpg">
+            <picture class="gallery__picture">
+              <source media="(min-width: 1200px)" height="267" width="400" srcset="img/gallery/photo-mountain-road-desktop@1x.jpg 1x, img/gallery/photo-mountain-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" height="267" width="324" srcset="img/gallery/photo-mountain-road-tablet@1x.jpg 1x, img/gallery/photo-mountain-road-tablet@2x.jpg 2x">
+              <img class="gallery__card-image"  alt="Дорога на север" src="img/gallery/photo-mountain-road-mobile@1x.jpg" srcset="img/gallery/photo-mountain-road-mobile@2x.jpg 2x">
+            </picture>
             <figcaption class="gallery__card-description">
               <div class="gallery__card-text">
                 <h3 class="gallery__card-title">Дорога на север</h3>
@@ -94,7 +110,11 @@
             </figcaption>
           </figure>
           <figure class="gallery__card">
-            <img class="gallery__card-image" alt="Мост дьявола" src="img/gallery/devil's-bridge.jpg">
+            <picture class="gallery__picture">
+              <source media="(min-width: 1200px)" height="267" width="400" srcset="img/gallery/photo-devil's-bridge-desktop@1x.jpg 1x, img/gallery/photo-devil's-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" height="267" width="324" srcset="img/gallery/photo-devil's-bridge-tablet@1x.jpg 1x, img/gallery/photo-devil's-bridge-tablet@2x.jpg 2x">
+              <img class="gallery__card-image"  alt="Мост дьявола" src="img/gallery/photo-devil's-bridge-mobile@1x.jpg" srcset="img/gallery/photo-devil's-bridge-mobile@2x.jpg 2x">
+            </picture>
             <figcaption class="gallery__card-description">
               <div class="gallery__card-text">
                 <h3 class="gallery__card-title">Мост дьявола</h3>
@@ -112,7 +132,11 @@
           <p class="information-message__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video">
-          <img class="video__preview" alt="Превью видео" src="img/gallery/video-desktop.jpg">
+          <picture class="gallery__picture">
+            <source media="(min-width: 1200px)" height="500" width="800" srcset="img/gallery/video-desktop@1x.jpg 1x, img/gallery/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" height="500" width="648" srcset="img/gallery/video-tablet@1x.jpg 1x, img/gallery/video-tablet@2x.jpg 2x">
+            <img class="video__preview" alt="Превью видео" src="img/gallery/video-mobile@1x.jpg" srcset="img/gallery/video-mobile@2x.jpg 2x">
+          </picture>
           <button class="video__play-button">
             <span class="visually-hidden">Play</span>
           </button>

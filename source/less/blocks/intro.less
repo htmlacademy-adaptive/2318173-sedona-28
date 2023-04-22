@@ -1,7 +1,7 @@
 .intro {
   height: 389px;
   background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom,
-    url("../img/intro-img/back-desktop.jpg") no-repeat top;
+    url("../img/intro-img/back-mobile.jpg") no-repeat top;
   background-color: @page-background-color;
   background-size: cover;
   text-align: center;
@@ -9,12 +9,16 @@
   align-items: center;
   justify-content: center;
 
-  @media (min-width: @tablet-width) {
-    min-height: 461px;
-    background-size: auto;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom,
+      url("../img/intro-img/back-mobile@2x.jpg") no-repeat top;
+    background-size: auto 389px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
+    background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom,
+      url("../img/intro-img/back-desktop.jpg") no-repeat top;
     min-height: 461px;
     background-size: auto;
   }
