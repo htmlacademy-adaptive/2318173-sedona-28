@@ -296,7 +296,7 @@
   height: 389px;
   background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom, url("../img/intro-img/back-mobile.jpg") no-repeat top;
   background-color: #f2f2f2;
-  background-size: cover;
+  background-size: auto;
   text-align: center;
   display: flex;
   align-items: center;
@@ -304,33 +304,63 @@
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .intro {
-    background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom, url("../img/intro-img/back-mobile@2x.jpg") no-repeat top;
-    background-size: auto 389px;
+    background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom, url("../img/intro-img/back-mobile@2x.jpg") top / 901px 389px no-repeat;
+    height: 389px;
   }
 }
 @media (min-width: 768px) {
   .intro {
     background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom, url("../img/intro-img/back-desktop.jpg") no-repeat top;
-    min-height: 461px;
+    min-height: 518px;
     background-size: auto;
   }
 }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .intro {
+    background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom, url("../img/intro-img/back-desktop@2x.jpg") top / 1200px 518px no-repeat;
+    min-height: 518px;
+  }
+}
 .intro--secondary {
+  background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom, url("../img/intro-img/back-mobile-sec.jpg") top no-repeat;
   max-height: 158px;
-  background-size: 280%;
   background-position: center bottom;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .intro--secondary {
+    background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom, url("../img/intro-img/back-mobile-sec@2x.jpg") top / 902px 214px no-repeat;
+    background-position: center bottom;
+  }
 }
 @media (min-width: 768px) {
   .intro--secondary {
-    min-height: 289px;
-    max-height: 290px;
+    background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom, url("../img/intro-img/back-desktop.jpg") no-repeat top;
+    min-height: 290px;
+    background-position: center bottom;
     background-size: auto;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .intro--secondary {
+    background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom, url("../img/intro-img/back-desktop@2x.jpg") top / 1200px 518px no-repeat;
+    background-position: center bottom;
   }
 }
 @media (min-width: 1200px) {
   .intro--secondary {
-    min-height: 300px;
-    max-height: 301px;
+    min-height: 301px;
+  }
+}
+@media (min-width: 768px) {
+  .intro__logo-text {
+    width: 461px;
+    height: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .intro__logo-text--secondary {
+    width: 456px;
+    height: 77px;
   }
 }
 .advantages {
