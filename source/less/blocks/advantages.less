@@ -78,7 +78,7 @@
       min-width: 768px;
       width: 100%;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
     }
 
@@ -105,9 +105,16 @@
   }
 }
 
+.advantages__picture {
+  height: 260px;
+
+  @media (min-width: @tablet-width) {
+    height: 256px;
+  }
+}
+
 .advantages__images {
   object-fit: cover;
-  height: 260px;
   width: 100%;
 
   @media (min-width: @tablet-width) {

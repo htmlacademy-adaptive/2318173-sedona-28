@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
-    <!-- <script src="../js/script.js"></script> -->
+    <!-- <script src="js/script.js"></script> -->
     <div class="page__body-container">
       <header class="main-header">
         <a class="main-header__logo" href="#">
           <img class="main-header__logo-image" alt="логотип Седона" width="185" height="96" src="img/logo.svg">
         </a>
-        <nav class="main-header__nav main-nav main-nav--closed ">
+        <nav class="main-header__nav main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -60,7 +64,11 @@
                 <h3 class="advantages__item-title advantages__item-title--emphasis">НАСТОЯЩИЙ ГОРОДОК</h3>
                 <p class="advantages__item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages__images" width="520" height="260" src="img/advantages/city.jpg" alt="Фотография Седоны">
+              <picture class="advantages__picture">
+                <source media="(min-width: 1200px)" height="256" width="800" srcset="img/advantages/photo-city-desktop@1x.jpg 1x, img/advantages/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" height="256" width="512" srcset="img/advantages/photo-city-tablet@1x.jpg 1x, img/advantages/photo-city-tablet@2x.jpg 2x">
+                <img class="advantages__images" width="520" height="260" src="img/advantages/photo-city-mobile@1x.jpg" srcset="img/advantages/photo-city-mobile@2x.jpg 2x" alt="Фотография Седоны">
+              </picture>
               <div class="advantages__internal-list">
                 <ul class="internal-list">
                   <li class="internal-list__item">
@@ -83,7 +91,11 @@
                 <h3 class="advantages__item-title advantages__item-title--emphasis">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
                 <p class="advantages__item-text">Да, по нему можно пройти!Если вы осмелитесь, конечно</p>
               </div>
-              <img class="advantages__images advantages__images--second" width="520" height="260" src="img/advantages/devil's-bridge.jpg" alt="Мост дьявола">
+              <picture class="advantages__picture">
+                <source media="(min-width: 1200px)" height="256" width="800" srcset="img/advantages/devil's-bridge-desktop@1x.jpg 1x, img/advantages/devil's-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" height="256" width="512" srcset="img/advantages/devil's-bridge-tablet@1x.jpg 1x, img/advantages/devil's-bridge-tablet@2x.jpg 2x">
+                <img class="advantages__images advantages__images--second" width="520" height="260" src="img/advantages/devil's-bridge-mobile@1x.jpg" srcset="img/advantages/devil's-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+              </picture>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__item-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
@@ -105,7 +117,11 @@
           <a class="information-message__button button" href="#">Найти Гостиницу</a>
         </div>
         <div class="map">
-          <img class="map__images" width="1200" height="350" src="img/map.jpg" alt="Карта">
+          <picture class="advantages__picture--map">
+            <source media="(min-width: 1200px)" height="350" width="1200" srcset="img/map/map-desktop@1x.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" height="350" width="768" srcset="img/map/map-tablet@1x.jpg 1x, img/map/map-tablet@2x.jpg 2x">
+            <img class="map__images" width="320" height="350" src="img/map/map-mobile@1x.jpg" srcset="img/map/map-mobile@2x.jpg 2x" alt="Карта">
+          </picture>
         </div>
       </main>
       <footer class="footer">

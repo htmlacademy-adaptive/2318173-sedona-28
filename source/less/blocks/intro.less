@@ -1,38 +1,76 @@
 .intro {
   height: 389px;
   background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom,
-    url("../img/intro-img/back-desktop.jpg") no-repeat top;
+    url("../img/intro-img/back-mobile.jpg") no-repeat top;
   background-color: @page-background-color;
-  background-size: cover;
+  background-size: auto;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media (min-width: @tablet-width) {
-    min-height: 461px;
-    background-size: auto;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom,
+      url("../img/intro-img/back-mobile@2x.jpg") top/901px 389px no-repeat;
+    height: 389px;
   }
 
-  @media (min-width: @desktop-width) {
-    min-height: 461px;
+  @media (min-width: @tablet-width) {
+    background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom,
+      url("../img/intro-img/back-desktop.jpg") no-repeat top;
+    min-height: 518px;
     background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom,
+        url("../img/intro-img/back-desktop@2x.jpg") top/1200px 518px no-repeat;
+      min-height: 518px;
+    }
   }
 
   &--secondary {
+    background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom,
+      url("../img/intro-img/back-mobile-sec.jpg") top no-repeat;
     max-height: 158px;
-    background-size: 280%;
     background-position: center bottom;
 
+    @media (min-resolution: 2dppx) {
+      background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom,
+        url("../img/intro-img/back-mobile-sec@2x.jpg") top/902px 214px no-repeat;
+      background-position: center bottom;
+    }
+
     @media (min-width: @tablet-width) {
-      min-height: 289px;
-      max-height: 290px;
+      background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom,
+        url("../img/intro-img/back-desktop.jpg") no-repeat top;
+      min-height: 290px;
+      background-position: center bottom;
       background-size: auto;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/intro-img/intro-triangle.svg") no-repeat bottom,
+          url("../img/intro-img/back-desktop@2x.jpg") top/1200px 518px no-repeat;
+        background-position: center bottom;
+      }
     }
 
     @media (min-width: @desktop-width) {
-      min-height: 300px;
-      max-height: 301px;
+      min-height: 301px;
+    }
+  }
+}
+
+.intro__logo-text {
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+
+  &--secondary {
+    @media (min-width: @tablet-width) {
+      width: 456px;
+      height: 77px;
     }
   }
 }
