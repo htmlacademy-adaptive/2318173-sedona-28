@@ -68,7 +68,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 46px;
 
     @media (min-width: @tablet-width) {
       margin: 0;
@@ -132,6 +132,18 @@
 
   @media (min-width: @desktop-width) {
     background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.gallery__card-text {
+  @media (min-width: @desktop-width) {
+    padding-left: 6px;
+  }
+
+  &--first {
+    @media (min-width: @desktop-width) {
+      padding-left: 0
+    }
   }
 }
 

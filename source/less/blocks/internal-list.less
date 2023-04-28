@@ -3,7 +3,7 @@
   text-transform: uppercase;
   color: @base-text-color;
   background-color: @base-background-color;
-  padding: 23px 0 46px 60px;
+  padding: 33px 0 46px 65px;
   text-align: left;
 
   @media (min-width: @tablet-width) {
@@ -13,7 +13,7 @@
 }
 
 .internal-list__item {
-  padding-bottom: 25px;
+  padding-bottom: 32px;
 
   &:last-child {
     padding-bottom: 0;
@@ -100,8 +100,8 @@
       content: " ";
       width: 40px;
       height: 40px;
-      top: -10px;
-      left: -45px;
+      top: -8px;
+      left: -47px;
       background: @base-background-color url("../img/internal-list/icon-burger.svg") no-repeat;
       background-size: 40px 40px;
 
@@ -131,8 +131,8 @@
       content: " ";
       width: 40px;
       height: 40px;
-      top: -10px;
-      left: -45px;
+      top: -7px;
+      left: -44px;
       background: @base-background-color url("../img/internal-list/icon-gift.svg") no-repeat;
       background-size: 32px 38px;
 
@@ -178,6 +178,18 @@
 
   &--tablet {
     @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--tablet-1 {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    @media (min-width: @tablet-width) {
       display: none;
     }
   }

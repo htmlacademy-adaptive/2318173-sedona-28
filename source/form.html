@@ -58,7 +58,7 @@
           <p class="feedback__call">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="Post">
             <fieldset class="feedback__group feedback__group--name">
-              <legend class="feedback__title feedback__title--internal">Представьтесь:</legend>
+              <legend class="feedback__title feedback__title--name feedback__title--internal">Представьтесь:</legend>
                 <label class="feedback__label" for="name">ИМЯ*:</label>
                 <input class="feedback__input feedback__input--text" type="text" name="name" id="name" placeholder="Укажите Ваше имя" value="Пётр" required>
                 <label class="feedback__label" for="surname">ФАМИЛИЯ*:</label>
@@ -67,7 +67,7 @@
                 <input class="feedback__input feedback__input--text" type="text" name="patronymic" id="patronymic" placeholder="Укажите Ваше отчество" value="Викторович">
             </fieldset>
             <fieldset class="feedback__group feedback__group--contacts">
-              <legend class="feedback__title feedback__title--internal">Контактная информация:</legend>
+              <legend class="feedback__title feedback__title--contacts feedback__title--internal">Контактная информация:</legend>
                 <label class="feedback__label" for="tel">Контактный телефон*:</label>
                 <div class="feedback__container--tel">
                   <input class="feedback__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
@@ -79,7 +79,7 @@
             </fieldset>
             <fieldset class="feedback__group feedback__group--impression">
               <legend class="feedback__title feedback__title--internal feedback__title--option">Ваше Общее впечатление:</legend>
-              <ul class="feedback__list">
+              <ul class="feedback__list feedback__list--option">
                 <li class="feedback__item feedback__item--checklist">
                   <label class="feedback__label feedback__label--checklist">
                     <input class="feedback__input-radio visually-hidden" type="radio" name="impression" value="positive" checked>
@@ -105,7 +105,7 @@
             </fieldset>
             <fieldset class="feedback__group feedback__group--attractions">
               <legend class="feedback__title feedback__title--internal feedback__title--checklist">Посещенные достопримечательности:</legend>
-              <ul class="feedback__list">
+              <ul class="feedback__list feedback__list--checklist">
                 <li class="feedback__item feedback__item--checkbox">
                   <label class="feedback__label feedback__label--checklist">
                     <input class="feedback__input-checkbox visually-hidden" type="checkbox" name="Devil's Bridge" checked>
