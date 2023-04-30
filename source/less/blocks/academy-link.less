@@ -8,6 +8,10 @@
   color: @base-title-color;
   padding-right: 12px;
 
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+  }
+
   &:hover {
     color: @base-accent-color;
   }
@@ -20,6 +24,10 @@
 .academy-link__svg {
   vertical-align: middle;
   padding-left: 12px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 7px;
+  }
 }
 
 .academy-link svg {

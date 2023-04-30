@@ -119,7 +119,8 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 22px 20px 15px 20px;
+    padding: 22px 12px 15px 20px;
+    width: 100%;
     width: 100%;
     height: 80px;
     box-sizing: border-box;
@@ -132,6 +133,27 @@
 
   @media (min-width: @desktop-width) {
     background: rgba(0, 0, 0, 0.3);
+    padding: 16px 11px 15px 20px;
+  }
+
+  &--first {
+    @media (min-width: @tablet-width) {
+      padding: 25px 20px 15px 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 21px 20px 15px 22px;
+    }
+  }
+
+  &--middle {
+    @media (min-width: @tablet-width) {
+      padding: 25px 8px 15px 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 16px 6px 15px 20px;
+    }
   }
 }
 
@@ -168,7 +190,14 @@
     padding-bottom: 0;
   }
 
+  &--first {
+    @media (min-width: @tablet-width) {
+      padding-top: 0;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     color: @secondary-text-color;
+    padding-top: 4px;
   }
 }
