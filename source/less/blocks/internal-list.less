@@ -3,7 +3,7 @@
   text-transform: uppercase;
   color: @base-text-color;
   background-color: @base-background-color;
-  padding: 23px 0 46px 60px;
+  padding: 33px 0 46px 65px;
   text-align: left;
 
   @media (min-width: @tablet-width) {
@@ -13,7 +13,7 @@
 }
 
 .internal-list__item {
-  padding-bottom: 25px;
+  padding-bottom: 32px;
 
   &:last-child {
     padding-bottom: 0;
@@ -22,6 +22,7 @@
   @media (min-width: @tablet-width) {
     min-width: 190px;
     min-height: 114px;
+    width: 33%;
     padding: 153px 33px 64px 33px;
     text-align: center;
 
@@ -38,6 +39,12 @@
 
     &:last-child {
       padding-bottom: 69px;
+    }
+  }
+
+  &--center {
+    @media (min-width: @desktop-width) {
+      padding-top: 165px;
     }
   }
 }
@@ -79,7 +86,7 @@
       @media (min-width: @desktop-width) {
         width: 79px;
         height: 72px;
-        top: -104px;
+        top: -99px;
         left: 50%;
         transform: translate(-50%);
         background-size: 79px 72px;
@@ -93,8 +100,8 @@
       content: " ";
       width: 40px;
       height: 40px;
-      top: -10px;
-      left: -45px;
+      top: -8px;
+      left: -47px;
       background: @base-background-color url("../img/internal-list/icon-burger.svg") no-repeat;
       background-size: 40px 40px;
 
@@ -110,7 +117,7 @@
       @media (min-width: @desktop-width) {
         width: 73px;
         height: 68px;
-        top: -104px;
+        top: -92px;
         left: 50%;
         transform: translate(-50%);
         background-size: 73px 68px;
@@ -124,8 +131,8 @@
       content: " ";
       width: 40px;
       height: 40px;
-      top: -10px;
-      left: -45px;
+      top: -7px;
+      left: -44px;
       background: @base-background-color url("../img/internal-list/icon-gift.svg") no-repeat;
       background-size: 32px 38px;
 
@@ -141,7 +148,7 @@
       @media (min-width: @desktop-width) {
         width: 77px;
         height: 75px;
-        top: -104px;
+        top: -99px;
         left: 50%;
         transform: translate(-50%);
         background-size: 77px 75px;
@@ -159,5 +166,31 @@
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
+  }
+}
+
+.internal-list__break {
+  &--desktop {
+    @media (max-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--tablet-1 {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }

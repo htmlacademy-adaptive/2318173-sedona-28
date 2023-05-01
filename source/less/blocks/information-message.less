@@ -13,6 +13,12 @@
     padding: 60px 371px 66px 371px;
   }
 
+  &--main {
+    @media (max-width: @mobile-width-only) {
+      padding-top: 41px;
+    }
+  }
+
   &--error {
     padding: 45px 42px 35px 41px;
 
@@ -31,8 +37,8 @@
     padding-bottom: 0;
 
     @media (min-width: @tablet-width) {
-      width: 444px;
-      padding: 53px 0 0 0;
+      min-width: 444px;
+      padding: 46px 0 0 0;
     }
   }
 
@@ -40,12 +46,30 @@
     padding: 30px 0 60px 0;
     margin: 0 auto;
 
+    @media (max-width: @mobile-width-only) {
+      padding: 38px 0 60px 0;
+    }
+
     @media (min-width: @tablet-width) {
-      padding: 60px 0 55px 0;
+      padding: 60px 0 80px 0;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 60px 0 66px 0;
+      padding: 97px 0 90px 0;
+    }
+  }
+
+  &--gallery-second {
+    @media (max-width: @mobile-width-only) {
+      padding-bottom: 39px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 60px 0 88px 0;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 57px 155px 89px 155px;
     }
   }
 }
@@ -55,6 +79,58 @@
 
   &--gallery {
     padding-bottom: 27px;
+
+    @media (max-width: @mobile-width-only) {
+      padding-bottom: 25px;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 34px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 29px;
+    }
+  }
+
+  &--gallery-second {
+    @media (max-width: @mobile-width-only) {
+      padding-bottom: 29px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 28px;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 29px;
+    }
+  }
+
+  &--main {
+    @media (min-width: @tablet-width) {
+      padding-bottom: 27px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 30px;
+    }
+
+    @media (max-width: @mobile-width-only) {
+      padding-bottom: 21px;
+    }
+  }
+
+  &--error {
+    padding-bottom: 23px;
+  }
+
+  &--sent {
+    padding-bottom: 26px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 31px;
+    }
   }
 }
 
@@ -83,6 +159,32 @@
 
     @media (min-width: @tablet-width) {
       width: 272px;
+      margin-top: 47px;
+    }
+  }
+
+  &--main {
+    @media (min-width: @desktop-width) {
+      margin-top: 48px;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-top: 44px;
+    }
+  }
+}
+
+.information-message-break {
+  &--main,
+  &--desktop {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
     }
   }
 }

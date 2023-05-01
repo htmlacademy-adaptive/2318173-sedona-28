@@ -2,12 +2,20 @@
   width: 64px;
   height: 25px;
   background: transparent url("../img/gallery/like-icon.svg") no-repeat 0 50%;
+  background-position-y: -3px;
   border: none;
   margin-top: 6px;
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    background-position-y: 0;
+  }
+
+
   @media (min-width: @desktop-width) {
     background: transparent url("../img/gallery/like-icon-white.svg") no-repeat 0 50%;
+    background-position-y: unset;
+    margin-top: 12px;
   }
 
   .like__numbers {
@@ -18,8 +26,38 @@
     line-height: 21px;
     padding-left: 23px;
 
+    @media (max-width: @mobile-width-only) {
+      padding-left: 32px;
+    }
+
     @media (min-width: @desktop-width) {
       color: @secondary-text-color;
+    }
+  }
+
+  &--first {
+    @media (max-width: @mobile-width-only) {
+      padding-left: 5px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 7px;
+    }
+
+    .like__numbers {
+      padding-left: 32px;
+    }
+  }
+
+  &--middle {
+    .like__numbers {
+      @media (max-width: @mobile-width-only) {
+        padding-left: 27px;
+      }
+
+      @media (min-width: @tablet-width) {
+        padding-left: 15px;
+      }
     }
   }
 }

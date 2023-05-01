@@ -63,14 +63,20 @@
 
 .intro__logo-text {
   @media (min-width: @tablet-width) {
-    width: 461px;
+    width: 460px;
     height: 350px;
+    margin-bottom: 10px;
   }
 
   &--secondary {
     @media (min-width: @tablet-width) {
       width: 456px;
       height: 77px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: @mobile-width-only) {
+      padding-bottom: 12px;
     }
   }
 }
