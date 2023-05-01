@@ -10,7 +10,7 @@
   display: inline-block;
   color: @secondary-text-color;
   background-color: @base-accent-color;
-  min-width: 280px;
+  min-width: 272px;
   min-height: 58px;
   padding: 16px 49px;
   box-sizing: border-box;
@@ -31,5 +31,13 @@
 
   &:disabled {
     background-color: @decorative-color;
+  }
+
+  &--error{
+    min-width: 180px;
+
+    @media (max-width: @mobile-width-only) {
+      font-size: 18px;
+    }
   }
 }

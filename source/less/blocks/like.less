@@ -2,10 +2,15 @@
   width: 64px;
   height: 25px;
   background: transparent url("../img/gallery/like-icon.svg") no-repeat 0 50%;
-  background-position-y: unset;
+  background-position-y: -3px;
   border: none;
   margin-top: 6px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    background-position-y: 0;
+  }
+
 
   @media (min-width: @desktop-width) {
     background: transparent url("../img/gallery/like-icon-white.svg") no-repeat 0 50%;
@@ -48,6 +53,10 @@
     .like__numbers {
       @media (max-width: @mobile-width-only) {
         padding-left: 27px;
+      }
+
+      @media (min-width: @tablet-width) {
+        padding-left: 15px;
       }
     }
   }

@@ -72,6 +72,12 @@
     }
   }
 
+  &--bottom {
+    @media (max-width: @mobile-width-only) {
+      padding: 24px 26px 28px;
+    }
+  }
+
   &--emphasis {
     background-color: @base-accent-color;
     color: @secondary-text-color;
@@ -174,7 +180,7 @@
     height: 1px;
     left: 85px;
     right: 85px;
-    bottom: 43px;
+    bottom: 36px;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -182,6 +188,7 @@
     @media (min-width: @tablet-width) {
       left: 65px;
       right: 65px;
+      bottom: 43px;
     }
   }
 
@@ -212,6 +219,18 @@
 
   &--mobile {
     @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (max-width: @tablet-width) {
       display: none;
     }
   }
