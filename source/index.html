@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -64,8 +64,11 @@
                 <p class="advantages__item-text">Седона не аттракцион для<br class="advantages__item-break"> туристов,<br class="advantages__item-break--desktop"> там течёт своя<br class="advantages__item-break"> жизнь</p>
               </div>
               <picture class="advantages__picture">
+                <source media="(min-width: 1200px)" height="256" width="800" type="image/webp" srcset="img/advantages/photo-city-desktop@1x.webp 1x, img/advantages/photo-city-desktop@2x.webp 2x">
                 <source media="(min-width: 1200px)" height="256" width="800" srcset="img/advantages/photo-city-desktop@1x.jpg 1x, img/advantages/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" height="256" width="512" type="image/webp" srcset="img/advantages/photo-city-tablet@1x.webp 1x, img/advantages/photo-city-tablet@2x.webp 2x">
                 <source media="(min-width: 768px)" height="256" width="512" srcset="img/advantages/photo-city-tablet@1x.jpg 1x, img/advantages/photo-city-tablet@2x.jpg 2x">
+                <source width="520" height="260" type="image/webp" srcset="img/advantages/photo-city-mobile@1x.webp 1x, img/advantages/photo-city-mobile@2x.webp 2x">
                 <img class="advantages__images" width="520" height="260" src="img/advantages/photo-city-mobile@1x.jpg" srcset="img/advantages/photo-city-mobile@2x.jpg 2x" alt="Фотография Седоны">
               </picture>
               <div class="advantages__internal-list">
@@ -93,7 +96,9 @@
               <picture class="advantages__picture">
                 <source media="(min-width: 1200px)" height="256" width="800" type="image/webp" srcset="img/advantages/devil's-bridge-desktop@1x.webp 1x, img/advantages/devil's-bridge-desktop@2x.webp 2x">
                 <source media="(min-width: 1200px)" height="256" width="800" srcset="img/advantages/devil's-bridge-desktop@1x.jpg 1x, img/advantages/devil's-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" height="256" width="512" type="image/webp" srcset="img/advantages/devil's-bridge-tablet@1x.webp 1x, img/advantages/devil's-bridge-tablet@2x.webp 2x">
                 <source media="(min-width: 768px)" height="256" width="512" srcset="img/advantages/devil's-bridge-tablet@1x.jpg 1x, img/advantages/devil's-bridge-tablet@2x.jpg 2x">
+                <source width="520" height="260" type="image/webp" srcset="img/advantages/devil's-bridge-mobile@1x.webp 1x, img/advantages/devil's-bridge-mobile@2x.webp 2x">
                 <img class="advantages__images advantages__images--second" width="520" height="260" src="img/advantages/devil's-bridge-mobile@1x.jpg" srcset="img/advantages/devil's-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
               </picture>
             </li>
@@ -118,8 +123,12 @@
         </div>
         <div class="map">
           <picture class="advantages__picture--map">
+            <source media="(min-width: 1200px)" height="350" width="1200" type="image/webp" srcset="img/map/map-desktop@1x.webp 1x, img/map/map-desktop@2x.webp 2x">
             <source media="(min-width: 1200px)" height="350" width="1200" srcset="img/map/map-desktop@1x.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" height="350" width="768"
+            type="image/webp" srcset="img/map/map-tablet@1x.webp 1x, img/map/map-tablet@2x.webp 2x">
             <source media="(min-width: 768px)" height="350" width="768" srcset="img/map/map-tablet@1x.jpg 1x, img/map/map-tablet@2x.jpg 2x">
+            <source width="320" height="350" type="image/webp" src="img/map/map-mobile@1x.webp 1x, img/map/map-mobile@2x.webp 2x">
             <img class="map__images" width="320" height="350" src="img/map/map-mobile@1x.jpg" srcset="img/map/map-mobile@2x.jpg 2x" alt="Карта">
           </picture>
         </div>
