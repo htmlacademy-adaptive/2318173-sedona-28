@@ -75,11 +75,13 @@ const svg = () =>
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
+
+const { src, dest } = gulp
 export function makeStack () {
     return gulp.src(`source/img/social/*.svg`)
         .pipe(svgo())
         .pipe(stacksvg({ output: `sprite` }))
-        .pipe(gulp.dest(`./build/img/`))
+        .pipe(gulp.dest(`build/img/`))
 }
 
 //Copy
@@ -102,7 +104,6 @@ export const clean = () => {
 };
 
 // Server
-
 const server = (done) => {
   browser.init({
   server: {
@@ -122,7 +123,6 @@ const reload = (done) => {
 }
 
 // Watcher
-
 const watcher = () => {
 gulp.watch('source/less/**/*.less', gulp.series(styles));
 gulp.watch('source/js/script.js', gulp.series(scripts));
@@ -130,7 +130,6 @@ gulp.watch('source/*.html', gulp.series(html, browser.reload));
 }
 
 // Build
-
 export const build = gulp.series(
 clean,
 copy,
@@ -146,7 +145,6 @@ createWebp
 );
 
 // Default
-
 export default gulp.series(
 clean,
 copy,
