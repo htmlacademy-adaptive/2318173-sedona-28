@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фото и видео</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
-    <!-- <script src="../js/script.js"></script> -->
     <div class="page__body-container">
       <header class="main-header">
         <a class="main-header__logo" href="#">
@@ -60,10 +59,13 @@
         <section class="gallery">
           <figure class="gallery__card gallery__card--first">
             <picture class="gallery__picture">
-                <source media="(min-width: 1200px)" height="400" width="1200" srcset="img/gallery/photo-road-desktop@1x.jpg 1x, img/gallery/photo-road-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" height="400" width="648" srcset="img/gallery/photo-road-tablet@1x.jpg 1x, img/gallery/photo-road-tablet@2x.jpg 2x">
-                <img class="gallery__card-image"  alt="Неродные просторы" src="img/gallery/photo-road-mobile@1x.jpg" srcset="img/gallery/photo-road-mobile@2x.jpg 2x">
-              </picture>
+              <source media="(min-width: 1200px)" height="400" width="1200" type="image/webp" srcset="img/gallery/photo-road-desktop@1x.webp 1x, img/gallery/photo-road-desktop@2x.webp 2x">
+              <source media="(min-width: 1200px)" height="400" width="1200" srcset="img/gallery/photo-road-desktop@1x.jpg 1x, img/gallery/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" height="400" width="648" type="image/webp" srcset="img/gallery/photo-road-tablet@1x.webp 1x, img/gallery/photo-road-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" height="400" width="648" srcset="img/gallery/photo-road-tablet@1x.jpg 1x, img/gallery/photo-road-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/gallery/photo-road-mobile@1x.webp 1x, img/gallery/photo-road-mobile@2x.webp 2x">
+              <img class="gallery__card-image"  alt="Неродные просторы" src="img/gallery/photo-road-mobile@1x.jpg" srcset="img/gallery/photo-road-mobile@2x.jpg 2x">
+            </picture>
             <figcaption class="gallery__card-description gallery__card-description--first">
               <div class="gallery__card-text gallery__card-text--first">
                 <h3 class="gallery__card-title gallery__card-title--first">Неродные просторы</h3>
@@ -77,8 +79,11 @@
           </figure>
           <figure class="gallery__card">
             <picture class="gallery__picture">
+              <source media="(min-width: 1200px)" media="(min-width: 1200px)" height="267" width="400" type="image/webp" srcset="img/gallery/photo-plants-desktop@1x.webp 1x, img/gallery/photo-plants-desktop@2x.webp 2x">
               <source media="(min-width: 1200px)" height="267" width="400" srcset="img/gallery/photo-plants-desktop@1x.jpg 1x, img/gallery/photo-plants-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" height="267" width="324" type="image/webp" srcset="img/gallery/photo-plants-tablet@1x.webp 1x, img/gallery/photo-plants-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" height="267" width="324" srcset="img/gallery/photo-plants-tablet@1x.jpg 1x, img/gallery/photo-plants-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/gallery/photo-plants-mobile@1x.webp 1x, img/gallery/photo-plants-mobile@2x.webp 2x">
               <img class="gallery__card-image"  alt="Неродные просторы" src="img/gallery/photo-plants-mobile@1x.jpg" srcset="img/gallery/photo-plants-mobile@2x.jpg 2x">
             </picture>
             <figcaption class="gallery__card-description">
@@ -94,8 +99,11 @@
           </figure>
           <figure class="gallery__card">
             <picture class="gallery__picture">
+              <source media="(min-width: 1200px)" media="(min-width: 1200px)" height="267" width="400" type="image/webp" srcset="img/gallery/photo-mountain-road-desktop@1x.webp 1x, img/gallery/photo-mountain-road-desktop@2x.webp 2x">
               <source media="(min-width: 1200px)" height="267" width="400" srcset="img/gallery/photo-mountain-road-desktop@1x.jpg 1x, img/gallery/photo-mountain-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" height="267" width="324" type="image/webp" srcset="img/gallery/photo-mountain-road-tablet@1x.webp 1x, img/gallery/photo-mountain-road-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" height="267" width="324" srcset="img/gallery/photo-mountain-road-tablet@1x.jpg 1x, img/gallery/photo-mountain-road-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/gallery/photo-mountain-road-mobile@1x.webp 1x, img/gallery/photo-mountain-road-mobile@2x.webp 2x">
               <img class="gallery__card-image"  alt="Дорога на север" src="img/gallery/photo-mountain-road-mobile@1x.jpg" srcset="img/gallery/photo-mountain-road-mobile@2x.jpg 2x">
             </picture>
             <figcaption class="gallery__card-description gallery__card-description--middle">
@@ -111,8 +119,11 @@
           </figure>
           <figure class="gallery__card">
             <picture class="gallery__picture">
+              <source media="(min-width: 1200px)" height="267" width="400" type="image/webp" srcset="img/gallery/photo-devil's-bridge-desktop@1x.webp 1x, img/gallery/photo-devil's-bridge-desktop@2x.webp 2x">
               <source media="(min-width: 1200px)" height="267" width="400" srcset="img/gallery/photo-devil's-bridge-desktop@1x.jpg 1x, img/gallery/photo-devil's-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" height="267" width="324" type="image/webp" srcset="img/gallery/photo-devil's-bridge-tablet@1x.webp 1x, img/gallery/photo-devil's-bridge-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" height="267" width="324" srcset="img/gallery/photo-devil's-bridge-tablet@1x.jpg 1x, img/gallery/photo-devil's-bridge-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/gallery/photo-devil's-bridge-mobile@1x.webp 1x, img/gallery/photo-devil's-bridge-mobile@2x.webp 2x">
               <img class="gallery__card-image"  alt="Мост дьявола" src="img/gallery/photo-devil's-bridge-mobile@1x.jpg" srcset="img/gallery/photo-devil's-bridge-mobile@2x.jpg 2x">
             </picture>
             <figcaption class="gallery__card-description">
@@ -133,8 +144,11 @@
         </div>
         <div class="video">
           <picture class="gallery__picture">
+            <source media="(min-width: 1200px)" height="500" width="800" type="image/webp" srcset="img/gallery/video-desktop@1x.webp 1x, img/gallery/video-desktop@2x.webp 2x">
             <source media="(min-width: 1200px)" height="500" width="800" srcset="img/gallery/video-desktop@1x.jpg 1x, img/gallery/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" height="500" width="648" type="image/webp" srcset="img/gallery/video-tablet@1x.webp 1x, img/gallery/video-tablet@2x.webp 2x">
             <source media="(min-width: 768px)" height="500" width="648" srcset="img/gallery/video-tablet@1x.jpg 1x, img/gallery/video-tablet@2x.jpg 2x">
+            <source  type="image/webp" srcset="img/gallery/video-mobile@1x.webp 1x, img/gallery/video-mobile@2x.webp 2x">
             <img class="video__preview" alt="Превью видео" src="img/gallery/video-mobile@1x.jpg" srcset="img/gallery/video-mobile@2x.jpg 2x">
           </picture>
           <button class="video__play-button">
@@ -148,7 +162,7 @@
           <li class="social-list__item">
             <a class="social-list__link" href="https://vk.com/htmlacademy">
               <svg width="48" height="48" fill="none">
-                <use xlink:href="img/sprite.svg#social-link-vk"></use>
+                <use xlink:href="img/sprite.svg#vk"></use>
               </svg>
               <span class="visually-hidden">ВКонтакте</span>
             </a>
@@ -156,7 +170,7 @@
           <li class="social-list__item">
             <a class="social-list__link" href="https://t.me/htmlacademy">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
-                <use xlink:href="img/sprite.svg#social-link-telegram"></use>
+                <use xlink:href="img/sprite.svg#telegram"></use>
               </svg>
               <span class="visually-hidden ">Телеграмм</span>
             </a>
@@ -164,7 +178,7 @@
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
-                <use xlink:href="img/sprite.svg#social-link-youtube"></use>
+                <use xlink:href="img/sprite.svg#youtube"></use>
               </svg>
               <span class="visually-hidden ">Youtube</span>
             </a>
@@ -173,10 +187,11 @@
         <a class="academy-link" href="https://htmlacademy.ru/">
             Разработано
           <svg class="academy-link__svg" xmlns="http://www.w3.org/2000/svg" width="28" height="33" >
-            <use xlink:href="img/sprite.svg#academy-link-svg"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
