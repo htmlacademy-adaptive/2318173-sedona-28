@@ -124,40 +124,40 @@ const reload = (done) => {
 
 // Watcher
 const watcher = () => {
-gulp.watch('source/less/**/*.less', gulp.series(styles));
-gulp.watch('source/js/script.js', gulp.series(scripts));
-gulp.watch('source/*.html', gulp.series(html, browser.reload));
+  gulp.watch('source/less/**/*.less', gulp.series(styles));
+  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/*.html', gulp.series(html, browser.reload));
 }
 
 // Build
 export const build = gulp.series(
-clean,
-copy,
-optimizeImages,
-gulp.parallel(
-styles,
-html,
-scripts,
-svg,
-makeStack,
-createWebp
-),
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svg,
+    makeStack,
+    createWebp
+  ),
 );
 
 // Default
 export default gulp.series(
-clean,
-copy,
-copyImages,
-gulp.parallel(
-styles,
-html,
-scripts,
-svg,
-makeStack,
-createWebp
-),
-gulp.series(
-server,
-watcher
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svg,
+    makeStack,
+    createWebp
+  ),
+  gulp.series(
+  server,
+  watcher
 ));
