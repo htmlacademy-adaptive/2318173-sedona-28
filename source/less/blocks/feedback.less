@@ -610,6 +610,10 @@
   border-radius: 50%;
 }
 
+.feedback__input-radio[type="radio"]:focus + .feedback__control-mark {
+  background-color: @decorative-color;
+}
+
 .feedback__input-radio[type="radio"]:hover + .feedback__control-mark {
   background-color: @decorative-color;
 }
@@ -640,6 +644,10 @@
 
 .feedback__input-checkbox[type="checkbox"]:checked + .feedback__attractions-mark {
   background: @page-background-color url("../img/form/tick.svg") no-repeat 50% 50%;
+}
+
+.feedback__input-checkbox[type="checkbox"]:focus + .feedback__attractions-mark {
+  background-color: @decorative-color;
 }
 
 .feedback__input-checkbox[type="checkbox"]:hover + .feedback__attractions-mark {

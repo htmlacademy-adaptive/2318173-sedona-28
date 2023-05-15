@@ -218,6 +218,10 @@
   }
 
   &--mobile {
+    @media (max-width: @mobile-width-only) {
+      display: inline;
+    }
+
     @media (min-width: @tablet-width) {
       display: none;
     }
