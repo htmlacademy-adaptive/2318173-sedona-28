@@ -122,6 +122,8 @@
   }
 
   &--checklist {
+    margin: auto;
+
     &::before {
       top: -20px;
     }
@@ -145,6 +147,7 @@
     @media (min-width: @desktop-width) {
       padding-bottom: 21px;
       padding-top: 5px;
+      margin: auto;
     }
 
     @media (max-width: @mobile-width-only) {
@@ -154,6 +157,8 @@
   }
 
   &--message {
+    margin: auto;
+
     &::before {
       top: -20px;
     }
@@ -376,7 +381,7 @@
 
 .feedback__item {
   width: 280px;
-  height: 46px;
+  min-height: 46px;
   box-sizing: border-box;
   padding: 10px 33px 10px 62px;
 
