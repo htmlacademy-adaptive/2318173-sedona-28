@@ -20,7 +20,7 @@
         <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" alt="логотип Седона" width="185" height="96" src="img/logo.svg">
         </a>
-        <nav class="main-header__nav main-nav main-nav--closed ">
+        <nav class="main-header__nav main-nav main-nav--nojs  main-nav--closed ">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -153,7 +153,7 @@
         <ul class="footer__list social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="https://vk.com/htmlacademy">
-              <svg width="48" height="48" fill="none">
+              <svg width="24" height="24" fill="none">
                 <use xlink:href="img/sprite.svg#vk"></use>
               </svg>
               <span class="visually-hidden">ВКонтакте</span>
@@ -161,7 +161,7 @@
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="https://t.me/htmlacademy">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg"width="24" height="24" fill="none">
                 <use xlink:href="img/sprite.svg#telegram"></use>
               </svg>
               <span class="visually-hidden ">Телеграмм</span>
@@ -169,7 +169,7 @@
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                 <use xlink:href="img/sprite.svg#youtube"></use>
               </svg>
               <span class="visually-hidden ">Youtube</span>
@@ -178,15 +178,16 @@
         </ul>
         <a class="academy-link" href="https://up.htmlacademy.ru/profession/frontender/16/adaptive/28">
             Разработано
-          <svg class="academy-link__svg" xmlns="http://www.w3.org/2000/svg" width="28" height="33" >
+          <svg class="academy-link__svg"  width="28" height="33" >
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
+          <span class="visually-hidden ">Сайт HTML Academy</span>
         </a>
       </footer>
       <div class="modal-container modal-container--error modal-container--hidden">
         <div class="modal-window modal-window--error">
           <div class="information-message information-message--error">
-            <h2 class="information-message__title information-message__title--error title-block title-block--error">ЧТО-ТО ПОШЛО<br class="information-message-break--desktop">НЕ ТАК!</h2>
+            <h2 class="information-message__title information-message__title--error title-block title-block--error">ЧТО-ТО ПОШЛО<br class="information-message__break--desktop">НЕ ТАК!</h2>
             <p class="information-message__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             <a class="information-message__button information-message__button--error button button--error" href="#">ОК</a>
           </div>
@@ -197,7 +198,7 @@
           <div class="information-message information-message--sent">
             <div class="modal-window__text-container">
               <h2 class="information-message__title information-message__title--sent title-block title-block--sent">Ваш отзыв отправлен!</h2>
-              <p class="information-message__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br class="information-message-break"> В ближайшее время мы опубликуем его на сайте.</p>
+              <p class="information-message__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br class="information-message__break"> В ближайшее время мы опубликуем его на сайте.</p>
             </div>
             <div class="modal-window__close">
               <a class="modal-window__close-button button" href="#">ЗАКРЫТЬ ОКНО</a>

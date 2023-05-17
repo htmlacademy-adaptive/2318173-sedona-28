@@ -4,11 +4,11 @@
   background: @base-background-color;
 
   &--sent {
-    height: 323px;
+    min-height: 323px;
 
     @media (min-width: @tablet-width) {
       width: 640px;
-      height: 347px;
+      min-height: 347px;
       margin: auto;
     }
 
@@ -20,7 +20,7 @@
   &--error {
     @media (min-width: @tablet-width) {
       width: 400px;
-      height: 347px;
+      min-height: 347px;
       margin: auto;
     }
 
@@ -31,14 +31,14 @@
 }
 
 .modal-window__text-container {
-  height: 156px;
+  min-height: 156px;
   width: 244px;
   padding-left: 38px;
   padding-right: 38px;
   margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    height: 118px;
+    min-height: 118px;
     width: 444px;
     padding-left: 97px;
     padding-right: 97px;

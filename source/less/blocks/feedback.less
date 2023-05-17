@@ -637,6 +637,14 @@
   }
 }
 
+.feedback__input-radio[type="radio"]:disabled + .feedback__control-mark {
+  background-color: #f2f3f4;
+
+  &::before {
+    display: none;
+  }
+}
+
 .feedback__attractions-mark {
   position: absolute;
   content: "";
