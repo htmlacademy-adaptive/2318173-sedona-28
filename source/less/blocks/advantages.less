@@ -234,7 +234,15 @@
 }
 
 .advantages__internal-list {
-  width: 100%;
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1200px;
+  }
 }
 
 .advantages__item-break {
@@ -283,7 +291,7 @@
   }
 
   &--desktop {
-    @media (max-width: @tablet-width) {
+    @media (max-width: 1199.9px) {
       display: none;
     }
 
