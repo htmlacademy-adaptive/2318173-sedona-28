@@ -4,14 +4,17 @@
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: center;
-  width: 170px;
+
+  @media (min-width: @tablet-width) {
+    width: 170px;
+  }
 }
 
 .social-list__item {
   padding-right: 6px;
-  height: 33px;
-  padding-top: 15px;
-  margin-top: 5px;
+  width: 48px;
+  height: 48px;
+  display: flex;
 
   &:last-child {
     padding-right: 0;
@@ -19,13 +22,9 @@
 }
 
 .social-list__link {
-  padding: 15px 12px;
-  box-sizing: border-box;
+  padding: 12px;
   background: #81b3d2;
-}
 
-.social-list__link svg {
-  vertical-align: bottom;
 }
 
 .social-list__link:hover {
