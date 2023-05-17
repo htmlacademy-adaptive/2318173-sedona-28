@@ -14,14 +14,24 @@
   }
 }
 
-.social-list__link svg {
-  fill: @base-accent-color;
+.social-list__link {
+  padding: 15px 12px;
+  box-sizing: border-box;
+  background: #81b3d2;
 }
 
-.social-list__link:hover svg {
-  fill: @hover-color;
+.social-list__link svg {
+  vertical-align: bottom;
+}
+
+.social-list__link:hover {
+  background: @hover-color;
+}
+
+.social-list__link:active {
+  background: @active-color;
 }
 
 .social-list__link:active svg {
-  fill: @active-color;
+  fill-opacity: 0.3;
 }
